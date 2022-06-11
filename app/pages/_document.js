@@ -1,6 +1,12 @@
-import { Document, Html, DocumentHead, Main, BlitzScript
-/*DocumentContext*/
-} from "blitz";
+import {
+  Document,
+  Html,
+  DocumentHead,
+  Main,
+  BlitzScript,
+  /*DocumentContext*/
+} from "blitz"
+import { Nav } from "app/core/components/Nav"
 
 class MyDocument extends Document {
   // Only uncomment if you need to customize this behaviour
@@ -9,15 +15,16 @@ class MyDocument extends Document {
   //   return {...initialProps}
   // }
   render() {
-    return <Html lang="en">
+    return (
+      <Html lang="en">
         <DocumentHead />
         <body>
           <Main />
           <BlitzScript />
         </body>
-      </Html>;
+      </Html>
+    )
   }
-
 }
 
-export default MyDocument;
+export default MyDocument

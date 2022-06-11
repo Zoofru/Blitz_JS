@@ -1,0 +1,32 @@
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  background-color: #171738;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navItemContainer {
+  width: 10%;
+  text-align: center;
+  margin-right: 2.5%;
+}
+
+.navItem {
+  color: gray;
+  font-size: x-large;
+  border-bottom: 2px solid #171738;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: 2px solid #881600;
+}
+
+@media only screen and (max-width: 1400px) {
+  .navItem {
+    font-size: 1.1rem;
+  }
+}
